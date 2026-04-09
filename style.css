@@ -1,39 +1,64 @@
-style.css:imutavel-identidadevisual-efeitosdetexto-efeitosdefundo.
-
-/* ARQUITETO: JOSÉ PATRICK CASTRO SOARES
-   CONCEITO: DNA BIOLÓGICO E HARMONIA VISUAL
-*/
-
-:root {
-    /* Identidade de Cores: Profissionalismo e Terra */
-    --cor-dna-primaria: #1b3022;    /* Verde Floresta Profundo */
-    --cor-dna-secundaria: #2d5a27;  /* Verde Grama Renovada */
-    --detalhe-arquiteto: #d4af37;   /* Ouro para autoridade e beleza */
-    --fundo-limpo: #f9fbf9;         /* Off-white para clareza (Elements) */
-    --texto-soberano: #1a1a1a;
-    --espaçamento-padrao: 2rem;
-}
-
-/* Estrutura de Limpeza (Aba Elements) */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', -apple-system, sans-serif;
-}
-
+/* Definições de Identidade */
 body {
-    background-color: var(--fundo-limpo);
-    color: var(--texto-soberano);
-    line-height: 1.8;
-    overflow-x: hidden;
+    background-color: #000000; /* Fundo Preto Absoluto */
+    color: #e0e0e0;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    margin: 0;
 }
 
-/* Header: Identificação do Proprietário */
-header {
-    height: 60vh;
-    background: linear-gradient(rgba(27, 48, 34, 0.8), rgba(27, 48, 34, 0.9)), 
-                url('sua-foto-de-jardim.jpg') center/cover no-repeat;
+/* O Verde que Predomina e Brilha */
+h1, h2, h3 {
+    color: #39ff14; /* Verde Neon */
+    text-shadow: 0 0 8px rgba(57, 255, 20, 0.6), 0 0 15px rgba(57, 255, 20, 0.4);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Containers de Conteúdo (Células) */
+section {
+    background: rgba(20, 20, 20, 0.8);
+    border-left: 4px solid #228b22; /* Verde Folha para harmonia */
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 4px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+section:hover {
+    border-left: 4px solid #39ff14; /* Ativa o Neon no foco */
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+    transform: translateX(5px);
+}
+
+/* Protocolo de Especialista (Lista) */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    border-left: 1px solid #333;
+}
+
+li strong {
+    color: #39ff14;
+    display: block;
+    font-size: 1.1em;
+}
+
+/* Rodapé e Detalhes */
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #555;
+    font-size: 0.9em;
+    border-top: 1px solid #1a1a1a;
+}
     display: flex;
     flex-direction: column;
     justify-content: center;
